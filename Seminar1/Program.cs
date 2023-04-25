@@ -1,18 +1,20 @@
-﻿/* int number1 = 5;
-double number2 = 12.65;
+﻿// HomeWork 1.
 
-string word = "my word";
-char symbol = 't';
+// Task 1. Напишите программу, которая на вход два числа и проверяет, 
+// является ли первое число квадратом второго.
 
-bool check = false;
-int num1 = 5;
-int num2 = 7;
-Console.WriteLine("My numbers are " + num1 + " and " + num2 + " and it is good!");
-Console.WriteLine($"My numbers are {num1} and {num2} and it is good!"); */
+Console.Write("input + first number: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("input a second number: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
 
-// Console.Write("input a number: ");
-// int num = Convert.ToInt32 (Console.ReadLine());
+int quad2 = num2 * num2;
 
-// string word = Console.ReadLine();
-// Console.WriteLine("Your number is " + num);
-
+if(num1 == quad2)
+{
+    Console.WriteLine("Yes!");
+}
+else
+{
+    Console.WriteLine("No!");
+}
